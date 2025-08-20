@@ -1,0 +1,21 @@
+import { Routes } from '@angular/router';
+import { Home } from './pages/home/home';
+import { loadRemoteModule } from '@angular-architects/native-federation';
+
+export const routes: Routes = [
+    {path: '', component: Home},
+    {
+        path: 'client1',
+        loadComponent: () =>
+            loadRemoteModule('client1', './Component').then((m) => m.AppComponent),
+    },
+    {
+        path: 'client2',
+        loadComponent: () =>
+            loadRemoteModule('client2', './Component').then((m) => m.AppComponent),
+    },
+    {
+        path: '**',
+        component: Home
+    }
+];
