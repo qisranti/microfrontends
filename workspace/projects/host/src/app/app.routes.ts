@@ -7,12 +7,12 @@ export const routes: Routes = [
     {
         path: 'client1',
         loadComponent: () =>
-            loadRemoteModule('client1', './Component').then((m) => m.AppComponent),
+            loadRemoteModule('client1', './Component').then((m) => m.App),
     },
     {
         path: 'client2',
         loadComponent: () =>
-            loadRemoteModule('client2', './Component').then((m) => m.AppComponent),
+            loadRemoteModule('client2', './Component').then((m) => m.App),
     },
     {
         path: '**',
