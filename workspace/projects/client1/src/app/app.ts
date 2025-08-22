@@ -1,5 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HostServiceProxy } from './shared/services/HostServiceProxy.service';
 
 @Component({
   selector: 'app-client1-root',
@@ -9,4 +10,17 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('client1');
+  hostServices = inject(HostServiceProxy);
+
+  testHostService(){
+
+  }
+
+  testLocalService(){
+
+  }
+
+  testClient2Service(){
+
+  }
 }
