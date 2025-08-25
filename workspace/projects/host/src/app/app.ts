@@ -9,6 +9,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
+import { inject } from '@angular/core';
+import { TestServiceService } from 'shlib';
 
 @Component({
   selector: 'app-host-root',
@@ -30,4 +32,12 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class App {
   protected readonly title = signal('host');
+
+  #sharedServiceFromLib = inject(TestServiceService);
+  message = this.#sharedServiceFromLib.sharedMessage;
+
+  updateMessage() {
+    this.#sharedServiceFromLib.sharedMessage.set('Message updated from Host');
+  }
+
 }

@@ -4,16 +4,13 @@ module.exports = withNativeFederation({
 
   name: 'client1',
 
-  remotes:{
-    host: 'http://localhost:4200/remoteEntry.json'
-  },
-
   exposes: {
     './Component': './projects/client1/src/app/app.ts',
   },
 
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
+    shlib: { singleton: true, strictVersion: true, requiredVersion: '0.0.1' },
   },
 
   skip: [

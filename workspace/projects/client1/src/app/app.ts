@@ -1,26 +1,22 @@
 import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HostServiceProxy } from './shared/services/HostServiceProxy.service';
+import { TestServiceService } from 'shlib';
 
 @Component({
   selector: 'app-client1-root',
   imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
 export class App {
   protected readonly title = signal('client1');
-  hostServices = inject(HostServiceProxy);
 
-  testHostService(){
+  #sharedServiceFromLib = inject(TestServiceService);
+  message = this.#sharedServiceFromLib.sharedMessage;
 
-  }
+  testHostService() {}
 
-  testLocalService(){
+  testLocalService() {}
 
-  }
-
-  testClient2Service(){
-
-  }
+  testClient2Service() {}
 }

@@ -9,6 +9,7 @@ module.exports = withNativeFederation({
 
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
+    shlib: { singleton: true, strictVersion: true, requiredVersion: '0.0.1' },
   },
 
   skip: [
