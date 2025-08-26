@@ -1,12 +1,19 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HostServiceService {
 
-  setHostValue(host:string){
-    console.log("Status set to : " + host);
+  private _data = signal<any>(null);
+
+  setData(value: any) {
+    this._data.set(value);
   }
+
+  get data() {
+    return this._data;
+  }
+
 
 }

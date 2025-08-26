@@ -1,17 +1,15 @@
 const { withNativeFederation, shareAll } = require('@angular-architects/native-federation/config');
 
 module.exports = withNativeFederation({
-  name: 'host',
-  remotes: {
-    client1: 'http://localhost:4201/remoteEntry.js',
-  },
+
+  name: 'remote1',
+
   exposes: {
-    './hostService': 'projects/host/src/app/shared/services/host-service.service.ts',
+    './Component': './projects/remote1/src/app/app.ts',
   },
 
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
-    shlib: { singleton: true, strictVersion: true, requiredVersion: '0.0.1' },
   },
 
   skip: [
@@ -29,6 +27,7 @@ module.exports = withNativeFederation({
     // New feature for more performance and avoiding
     // issues with node libs. Comment this out to
     // get the traditional behavior:
-    ignoreUnusedDeps: true,
-  },
+    ignoreUnusedDeps: true
+  }
+  
 });

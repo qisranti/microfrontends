@@ -15,7 +15,7 @@ export class Home {
   hostService = inject(HostServiceService);
 
   testLocalService() {
-    this.hostService.setHostValue('From Local Home');
+    
   }
   testClient1Service() {}
   testClient2Service() {}
