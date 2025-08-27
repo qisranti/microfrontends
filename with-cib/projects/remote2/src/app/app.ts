@@ -1,6 +1,7 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { Component, inject, Input, input, signal } from '@angular/core';
+import { ActivatedRoute, RouterOutlet } from '@angular/router';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-remote2-root',
   imports: [RouterOutlet],
@@ -8,5 +9,8 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.scss'
 })
 export class App {
+  @Input() name!: string;
   protected readonly title = signal('remote2');
+  // readonly #router = inject(ActivatedRoute);
+  // readonly name = toSignal<string>(this.#router.params.pipe(map((params) => params['name'])), {initialValue: undefined});
 }

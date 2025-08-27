@@ -232,6 +232,11 @@
       </svg>
       <h1>Hello, {{ title() }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+      <input
+        placeholder="Type your name"
+        [(ngModel)]="name"
+        aria-label="Type your name">
+      <button (click)="setName()">Set Name</button>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
