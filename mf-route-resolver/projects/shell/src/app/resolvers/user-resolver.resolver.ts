@@ -5,6 +5,6 @@ import { of } from 'rxjs';
 @Injectable({ providedIn: 'root' })
 export class UserResolver implements Resolve<string> {
   resolve() {
-    return of('ISrael Quisbert');
+    return of('Israel Quisbert');
   }
 }

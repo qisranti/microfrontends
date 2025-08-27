@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { ActivatedRoute, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -9,9 +9,11 @@ import { ActivatedRoute, RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('remote2');
+  readonly route = inject(ActivatedRoute);
   userName = signal('');
-  constructor(private route: ActivatedRoute) {
-    const resolvedName = this.route.snapshot.data['userName'];
+
+  constructor(route: ActivatedRoute) {
+    const resolvedName = route.snapshot.data['userName'];
     this.userName.set(resolvedName);
   }
 }

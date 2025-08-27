@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { ActivatedRoute, RouterOutlet } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs/operators';
@@ -11,14 +11,6 @@ import { map } from 'rxjs/operators';
 })
 export class App {
   protected readonly title = signal('remote2');
-  readonly name = signal('');
-
-  constructor(private router: ActivatedRoute) {
-    const nameSignal = toSignal(
-      this.router.params.pipe(map(params => params['name'] || ''))
-    );
-
-    this.name.set(nameSignal());
-  }
-
+  readonly #router = inject(ActivatedRoute);
+  readonly name = toSignal<string>(this.#router.params.pipe(map((params) => params['name'])), {initialValue: undefined});
 }
