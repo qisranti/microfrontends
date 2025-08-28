@@ -8,6 +8,16 @@ export const routes: Routes = [
             loadRemoteModule('remote1', './Component').then(m => m.App),
     },
     {
+        path: 'products',
+        loadComponent: () => 
+            loadRemoteModule('remote1', './Products').then(m => m.ProductsComponent),
+    },
+    {
+        path: 'clients',
+        loadComponent: () => 
+            loadRemoteModule('remote2', './Clients').then(m => m.ClientsComponent),
+    },
+    {
         path: 'remote2',
         loadComponent: () =>
             loadRemoteModule('remote2', './Component').then(m => m.App),

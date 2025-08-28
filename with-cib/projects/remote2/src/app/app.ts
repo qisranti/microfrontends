@@ -11,6 +11,4 @@ import { map } from 'rxjs/operators';
 export class App {
   @Input() name!: string;
   protected readonly title = signal('remote2');
-  // readonly #router = inject(ActivatedRoute);
-  // readonly name = toSignal<string>(this.#router.params.pipe(map((params) => params['name'])), {initialValue: undefined});
 }
