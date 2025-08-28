@@ -16,7 +16,11 @@
 			"architect": {
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
-					"options": {},
+          "options": {
+            "styles": [
+              "projects/shell/src/custom-theme.scss"
+            ]
+          },
 					"configurations": {
 						"production": {
 							"target": "shell:esbuild:production"
@@ -134,7 +138,11 @@
 			"architect": {
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
-					"options": {},
+          "options": {
+            "styles": [
+              "projects/remote1/src/custom-theme.scss"
+            ]
+          },
 					"configurations": {
 						"production": {
 							"target": "remote1:esbuild:production"

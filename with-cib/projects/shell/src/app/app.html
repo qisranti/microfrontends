@@ -1,5 +1,35 @@
-<a routerLink="/remote1">Remote1</a>
-<a routerLink="/remote2">Remote2</a>
-<a routerLink="/products">Products in Remote1</a>
-<a routerLink="/clients">Clients in Remote2</a>
-<router-outlet></router-outlet>
+<mat-drawer-container class="container">
+  <mat-drawer mode="side" opened class="drawer">
+    <mat-toolbar>Microservices</mat-toolbar>
+    <div class="drawer-content">
+      <mat-nav-list>
+        <mat-list-item routerLink="/">
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </mat-list-item>
+        <mat-list-item routerLink="/remote1">
+          <mat-icon>backup_table</mat-icon>
+          <span>Remote 1</span>
+        </mat-list-item>
+        <mat-list-item routerLink="/remote2">
+          <mat-icon>backup_table</mat-icon>
+          <span>Remote 2</span>
+        </mat-list-item>
+        <mat-list-item routerLink="/products">
+          <mat-icon>shopping_cart</mat-icon>
+          <span>Products</span>
+        </mat-list-item>
+        <mat-list-item routerLink="/clients">
+          <mat-icon>contacts_product</mat-icon>
+          <span>Clients</span>
+        </mat-list-item>
+      </mat-nav-list>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="content">
+      <h1>Este es el host</h1>
+      <router-outlet />
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
