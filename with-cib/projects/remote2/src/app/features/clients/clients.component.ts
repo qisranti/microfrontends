@@ -1,7 +1,14 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, inject, Input, OnInit } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
+import { PokemonService } from 'pokelib';
+
+type Pokemon = {
+  name: string;
+  url: string;
+};
+
 @Component({
   selector: 'app-clients',
   imports: [MatCardModule, MatButtonModule, MatDividerModule],
@@ -9,27 +16,26 @@ import { MatDividerModule } from '@angular/material/divider';
   styleUrls: ['./clients.component.css'],
 })
 export class ClientsComponent implements OnInit {
-  clients = [
-    {
-      id: 1,
-      name: 'Client 1',
-      description: 'Description for Client 1',
-    },
-    {
-      id: 2,
-      name: 'Client 2',
-      description: 'Description for Client 2',
-    },
-    {
-      id: 3,
-      name: 'Client 3',
-      description: 'Description for Client 3',
-    },
-  ];
-  @Input() id!: number;
+  // @Input({required: true}) id!: number;
+  pokeService = inject(PokemonService);
+  pokemons: Pokemon[] = [];
+  
   constructor() {
-    console.log('Client ID:', this.id);
+    this.loadPokemons();
   }
 
   ngOnInit() {}
+
+  loadPokemons() {
+    this.pokeService.getPokemonList(10, 0).subscribe((response) => {
+      this.pokemons = response.results;
+    });
+  }
+  getPokemonId(url: string): number {
+    const segments = url.split('/').filter(segment => segment.length > 0);
+    return Number(segments[segments.length - 1]);
+  }
+  getPokemonImage(pokemonId: number): string {
+    return this.pokeService.getPokemonImage(pokemonId);
+  }
 }

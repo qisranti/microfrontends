@@ -6,16 +6,16 @@
     <mat-divider/>
     <div class="card-grid-wrapper">
       <div class="card-grid-container">
-        @for (pokemon of pokemons; track pokemon.name) {
+        @for (pokemon of pokemons$ | async; track pokemon.name) {
           <div class="card-grid-item">
-            <mat-card class="product-card">
-              <mat-card-title>{{ pokemon.name }}</mat-card-title>
+            <mat-card class="pokemon-card">
+              <mat-card-title>{{ pokemon.name | titlecase}}</mat-card-title>
               <mat-card-content>
-                <!-- <p>URL: {{ pokemon.url }}</p> -->
+                
                 <img [src]="getPokemonImage(getPokemonId(pokemon.url))" alt="{{ pokemon.name }}" />
               </mat-card-content>
               <mat-card-actions>
-                <button mat-button color="primary">View Details</button>
+                <button mat-stroked-button>View Details</button>
               </mat-card-actions>
             </mat-card>
           </div>
@@ -23,4 +23,5 @@
       </div>
     </div>
   </mat-card>
+  <div #placePokemonDetails></div>
 </div>

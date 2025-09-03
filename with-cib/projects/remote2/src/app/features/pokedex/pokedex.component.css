@@ -1,0 +1,50 @@
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background-color: white;
+}
+
+.main-card {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  flex-direction: column;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.card-grid-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.card-grid-container {
+  display: grid;
+  flex: 1;
+  overflow-y: auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  min-height: 0;
+}
+
+.pokemon-card {
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+}

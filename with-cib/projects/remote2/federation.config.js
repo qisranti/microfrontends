@@ -7,10 +7,12 @@ module.exports = withNativeFederation({
   exposes: {
     './Component': './projects/remote2/src/app/app.ts',
     './Clients': './projects/remote2/src/app/features/clients/clients.component.ts',
+    './Pokedex': './projects/remote2/src/app/features/pokedex/pokedex.component.ts',
   },
 
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
+    pokelib: { singleton: true, strictVersion: true, requiredVersion: '0.0.1' }
   },
 
   skip: [

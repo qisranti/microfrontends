@@ -31,5 +31,10 @@ export const routes: Routes = [
         path: 'remote2/:name',
         loadComponent: () =>
             loadRemoteModule('remote2', './Component').then(m => m.App),
-    }
+    },
+    {
+        path: 'pokedex',
+        loadComponent: () => 
+            loadRemoteModule('remote2', './Pokedex').then(m => m.PokedexComponent),
+    },
 ];

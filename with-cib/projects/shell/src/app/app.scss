@@ -2,9 +2,8 @@
 
 .container {
   width: 100%;
-  max-width: 1200px;
   box-sizing: border-box;
-  height: 90%;
+  height: 100%;
   padding: 0;
 }
 
@@ -14,7 +13,7 @@ mat-sidenav-container {
 mat-sidenav {
   background-color: white;
   color: black;
-  width: 100%;
+  width: 120px;
   height: 100%;
   border-radius: 0%;
   transform-origin: left;
@@ -24,7 +23,7 @@ mat-sidenav-content {
   transition: all 500ms ease-in-out !important;
 }
 mat-sidenav.sidenav-expanded {
-  width: 250px;
+  width: 150px;
 }
 .sidenav-expanded .menu-label {
   color: black;

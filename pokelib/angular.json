@@ -1,0 +1,33 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "pokelib": {
+      "projectType": "library",
+      "root": "projects/pokelib",
+      "sourceRoot": "projects/pokelib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/pokelib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/pokelib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/pokelib/tsconfig.spec.json"
+          }
+        }
+      }
+    }
+  }
+}
