@@ -1,12 +1,25 @@
 <div class="container">
   <mat-card class="main-card">
     <div>
-      <h3>Pokedex</h3>
+      <h3>POKEDEX</h3>
     </div>
     <mat-divider />
-    <div class="pokedex">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"/>
-      <h2>Bulbasaur</h2>
+    @if(pokemon()){
+    <div class="pokedex-display">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
+      <h2>Detalles de {{ pokemon()?.name }}</h2>
     </div>
+    <p>ID: {{ pokemon()?.id }}</p>
+    <p>Altura: {{ pokemon()?.height }}</p>
+    <p>Peso: {{ pokemon()?.weight }}</p>
+    <h3>Habilidades:</h3>
+    <ul>
+      @for (ability of pokemon()?.abilities; track ability.ability.name) {
+      <li>{{ ability.ability.name }}</li>
+      }
+    </ul>
+    }@else {
+    <p>Selecciona un Pokémon para ver los detalles.</p>
+    }
   </mat-card>
 </div>

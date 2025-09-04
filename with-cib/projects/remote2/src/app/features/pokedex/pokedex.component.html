@@ -11,11 +11,10 @@
             <mat-card class="pokemon-card">
               <mat-card-title>{{ pokemon.name | titlecase}}</mat-card-title>
               <mat-card-content>
-                
-                <img [src]="getPokemonImage(getPokemonId(pokemon.url))" alt="{{ pokemon.name }}" />
+                <img [src]="pokemon.url | pokemonId | pokemonImage" alt="{{ pokemon.name }}" />
               </mat-card-content>
               <mat-card-actions>
-                <button mat-stroked-button>View Details</button>
+                <button mat-stroked-button (click)="selectPokemon(pokemon.url)">View Details</button>
               </mat-card-actions>
             </mat-card>
           </div>
