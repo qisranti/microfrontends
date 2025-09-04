@@ -162,7 +162,7 @@
               {
                 "glob": "**/*",
                 "input": "projects/remote1/public",
-				"output": "assets"
+                "output": "assets"
               }
             ],
             "styles": ["projects/remote1/src/styles.scss"]
@@ -179,7 +179,7 @@
               {
                 "glob": "**/*",
                 "input": "projects/remote1/public",
-				"output": "assets"
+                "output": "assets"
               }
             ],
             "styles": ["projects/remote1/src/styles.scss"]

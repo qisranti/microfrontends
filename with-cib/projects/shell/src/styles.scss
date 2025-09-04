@@ -13,8 +13,11 @@ body {
 }
 
 @font-face {
-  font-family: 'Pokemon-DP';
-  src: url('/assets/fonts/pokemon-dp-pro.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Pokemon-DP-Pro-Solid';
+  src: url('/fonts/Pokemon Solid.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Pokemon-DP-Pro-Hollow';
+  src: url('/fonts/Pokemon Hollow.ttf') format('truetype');
 }

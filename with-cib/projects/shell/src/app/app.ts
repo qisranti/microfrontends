@@ -28,7 +28,6 @@ import { PokemonService } from 'pokelib';
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss',
-  providers: [PokemonService],
 })
 export class App {
   protected readonly title = signal('shell');

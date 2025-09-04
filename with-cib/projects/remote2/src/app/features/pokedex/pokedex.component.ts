@@ -1,4 +1,13 @@
-import { AfterViewInit, Component, inject, ViewChild, ViewContainerRef } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  effect,
+  inject,
+  Injector,
+  signal,
+  ViewChild,
+  ViewContainerRef,
+} from '@angular/core';
 import { PokemonList, PokemonService } from 'pokelib';
 import { Pokemon } from 'pokelib';
 import { MatCardModule } from '@angular/material/card';
@@ -20,7 +29,6 @@ import { PokemonImagePipe } from 'pokelib';
     PokemonIdPipe,
     PokemonImagePipe,
   ],
-  providers: [PokemonIdPipe, PokemonImagePipe, PokemonService],
   templateUrl: './pokedex.component.html',
   styleUrls: ['./pokedex.component.css'],
 })
@@ -31,6 +39,8 @@ export class PokedexComponent {
   placePokemonDetails!: ViewContainerRef;
   #pokeService = inject(PokemonService);
   #pokemonIdPipe = inject(PokemonIdPipe);
+  #injector = inject(Injector);
+  selectedPokemonId = signal<number | undefined>(undefined);
 
   limit = 120;
   offset = 0;
@@ -60,7 +70,18 @@ export class PokedexComponent {
         exposedModule: './PokemonDetails',
       });
 
-      this.placePokemonDetails.createComponent(m.PokemonDetailsComponent);
+      const componentRef = this.placePokemonDetails.createComponent(m.PokemonDetailsComponent, {
+        injector: this.#injector,
+      });
+
+      effect(
+        () => {
+          if (this.selectedPokemonId()) {
+            componentRef.setInput('pokemonId', this.selectedPokemonId());
+          }
+        },
+        { injector: this.#injector }
+      );
     } catch (error) {
       console.error('Failed loading the Pokemon Details:', error);
     }
@@ -68,6 +89,7 @@ export class PokedexComponent {
 
   selectPokemon(pokemonUrl: string) {
     const pokemonId = this.#pokemonIdPipe.transform(pokemonUrl);
-    this.#pokeService.setSelectedPokemon(Number(pokemonId));
+    this.selectedPokemonId.set(Number(pokemonId));
+    console.log('Selected ID in PokedexComponent:', this.selectedPokemonId());
   }
 }

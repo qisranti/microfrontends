@@ -19,10 +19,37 @@
   scrollbar-width: none;
 }
 
-h3 {
+.pokedex-title {
   text-align: center;
   color: #73cec0;
-  font-family: 'Pokemon-DP', sans-serif;
+  letter-spacing: 3px;
+  font-family: 'Pokemon-DP-Pro-Solid';
+}
+
+.pokemon-name {
+  text-align: center;
+  font-family: 'Pokemon-DP-Pro-Hollow';
+  letter-spacing: 3px;
+}
+
+.pokedex-subtitle{
+  text-align: center;
+  font-family: 'Pokemon-DP-Pro-Solid';
+  letter-spacing: 3px;
+}
+
+p{
+  margin: 0;
+  font-family: 'Pokemon-DP-Pro-Solid';
+}
+
+li{
+  font-family: 'Pokemon-DP-Pro-Hollow';
+}
+.variable-style{
+  font-family: 'Pokemon-DP-Pro-Hollow';
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .card-grid-wrapper {

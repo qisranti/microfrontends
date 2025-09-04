@@ -1,25 +1,31 @@
 <div class="container">
   <mat-card class="main-card">
     <div>
-      <h3>POKEDEX</h3>
+      <h2 class="pokedex-title">Pokedex</h2>
     </div>
     <mat-divider />
-    @if(pokemon()){
+    @let pokemon = pokemon$() | async; 
+    @if (pokemon) {
     <div class="pokedex-display">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
-      <h2>Detalles de {{ pokemon()?.name }}</h2>
+      <img
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{
+          pokemon.id
+        }}.png"
+      />
+      <h2 class="pokemon-name">{{ pokemon.name | titlecase}}</h2>
     </div>
-    <p>ID: {{ pokemon()?.id }}</p>
-    <p>Altura: {{ pokemon()?.height }}</p>
-    <p>Peso: {{ pokemon()?.weight }}</p>
-    <h3>Habilidades:</h3>
+    <p>ID: <span class="variable-style">{{ pokemon.id }}</span></p>
+    <p>Height: <span class="variable-style">{{ pokemon.height }}</span></p>
+    <p>Weight: <span class="variable-style">{{ pokemon.weight }}</span></p>
+    <h3 class="pokedex-subtitle">Skills:</h3>
     <ul>
-      @for (ability of pokemon()?.abilities; track ability.ability.name) {
-      <li>{{ ability.ability.name }}</li>
+      @for (ability of pokemon.abilities; track ability.ability.name) {
+      <li class="variable-style">{{ ability.ability.name | titlecase}}</li>
       }
     </ul>
-    }@else {
-    <p>Selecciona un Pokémon para ver los detalles.</p>
+
+    } @else {
+    <p style="font-family: 'Pokemon-DP-Pro-Solid';">Select a Pokemon to see details.</p>
     }
   </mat-card>
 </div>
