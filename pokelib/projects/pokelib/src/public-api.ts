@@ -11,3 +11,5 @@ export * from './lib/models/moves.model';
 export * from './lib/models/stats.model';
 export * from './lib/models/types.model';
 export * from './lib/models/pokemon-list.model';
+export * from './lib/pipes/pokemonId.pipe';
+export * from './lib/pipes/pokemonImage.pipe';

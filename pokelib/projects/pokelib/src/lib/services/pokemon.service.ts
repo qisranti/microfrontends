@@ -2,6 +2,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
 import { Pokemon } from '../models/pokemon.model';
 import { PokemonList } from '../models/pokemon-list.model';
+import { PokemonDetails } from '../models/pokemon-details.model';
 
 @Injectable({
   providedIn: 'root',
@@ -14,14 +15,16 @@ export class PokemonService {
   readonly #selectedPokemon = signal<number>(1);
 
   setSelectedPokemon(pokemonId: number) {
+    console.log('Setting selected pokemon to', pokemonId);
     this.#selectedPokemon.set(pokemonId);
   }
 
   getSelectedPokemon() {
+    console.log('Getting selected pokemon:', this.#selectedPokemon());
     return this.#selectedPokemon;
   }
 
-  getPokemonList(limit: number, offset: number) {
+  getPokemonList(offset: number, limit: number, ) {
     const params = new HttpParams().set('limit', limit.toString()).set('offset', offset.toString());
 
     return this.#http.get<PokemonList>(`${this.#baseUrl}/pokemon`, { params });
@@ -32,6 +35,6 @@ export class PokemonService {
   }
 
   getPokemonDetails(pokemonId: number) {
-    return this.#http.get(`${this.#baseUrl}/pokemon/${pokemonId}`);
+    return this.#http.get<PokemonDetails>(`${this.#baseUrl}/pokemon/${pokemonId}`);
   }
 }
