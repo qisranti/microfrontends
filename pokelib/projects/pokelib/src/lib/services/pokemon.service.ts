@@ -15,7 +15,6 @@ export class PokemonService {
   readonly #selectedPokemon = signal<number>(1);
 
   setSelectedPokemon(pokemonId: number) {
-    console.log('Setting selected pokemon to', pokemonId);
     this.#selectedPokemon.set(pokemonId);
   }
 
