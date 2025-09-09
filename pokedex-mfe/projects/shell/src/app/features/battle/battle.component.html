@@ -1,12 +1,45 @@
 <div class="pokemon-battlefield">
   <div>
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
-    <h2 class="pokemon-name">Bulbasaur</h2>
-    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+    <div class="active-fight">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
+      <h2 class="battle-pokemon-name">Bulbasaur</h2>
+      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+    </div>
+
+    <div class="player-pokemons">
+      @for (pokemon of player1Pokemons ; track pokemon.id) {
+      <div class="selected-pokemons" tabindex="0">
+        <img
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{
+            pokemon.id
+          }}.png"
+          alt="{{ pokemon.name }}"
+        />
+        <h2 class="pokemon-name">{{ pokemon.name }}</h2>
+      </div>
+      }
+    </div>
   </div>
   <div>
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" />
-    <h2 class="pokemon-name">Ivysaur</h2>
-    <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+    <div class="active-fight">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" />
+      <h2 class="battle-pokemon-name">Charmander</h2>
+      <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+    </div>
+
+    <div class="player-pokemons">
+      @for (pokemon of player1Pokemons ; track pokemon.id) {
+      <div class="selected-pokemons" tabindex="0">
+        <img
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{
+            pokemon.id
+          }}.png"
+          alt="{{ pokemon.name }}"
+        />
+        <h2 class="pokemon-name">{{ pokemon.name }}</h2>
+      </div>
+      }
+    </div>
   </div>
 </div>
+<div class="players"></div>
