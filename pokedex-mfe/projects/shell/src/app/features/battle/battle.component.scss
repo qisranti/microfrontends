@@ -1,0 +1,14 @@
+.pokemon-battlefield {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 30dvw;
+  margin: 20px;
+  background-color: #73cec0;
+  border-radius: 8px;
+}
+
+.pokemon-battlefield > div {
+  text-align: center;
+}
