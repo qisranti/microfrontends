@@ -4,6 +4,7 @@ import { Injectable, Pipe, PipeTransform } from '@angular/core';
   name: 'pokemonImage',
   standalone: true
 })
+// @TODO: Delete this decorator
 @Injectable({
   providedIn: 'root'
 })
