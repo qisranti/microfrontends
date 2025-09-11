@@ -4,6 +4,10 @@ import { CommonModule } from '@angular/common';
 import { Pokemon, PokemonIdPipe, PokemonImagePipe, PokemonMove, PokemonService } from 'pokelib';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
+/* 
+ * @TODO:
+ * You should use this "providers: [PokemonIdPipe]" if you need to provide something (including pipes)
+ */
 @Component({
   selector: 'app-battle-controls',
   imports: [MatProgressBarModule, CommonModule, PokemonIdPipe, PokemonImagePipe],
