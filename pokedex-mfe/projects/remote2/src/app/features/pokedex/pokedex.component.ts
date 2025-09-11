@@ -22,12 +22,22 @@ import { of } from 'rxjs';
   styleUrls: ['./pokedex.component.scss'],
 })
 export class PokedexComponent {
+  
   #pokemonService = inject(PokemonService);
   // #selectedId = this.#pokemonService.getSelectedPokemon();
   pokemonId = input<number>();
   injector = inject(EnvironmentInjector);
 
   // pokemon = toSignal(this.#pokemonService.getPokemonDetails(this.#selectedId()));
+
+  // @TODO: Implemente PokeState with pokeId subject and update it from remote1
+  // readonly #pokeState = inject(PokeState);
+  // readonly #pokeId$ = this.#pokeState.getPokemonId$;
+  // readonly pokemon$ = this.pokeId$.pipe(
+  //   switchMap((pokeId) => this.#pokemonService.getPokemonDetails(id)),
+  // );
+  // ... (HTML)
+  // pokemon$ | async
 
   pokemon$ = computed(() => {
     const id = this.pokemonId();
@@ -36,6 +46,8 @@ export class PokedexComponent {
     }
     return null;
   });
+
+  // 
 
   constructor() {
     effect((): void => {
