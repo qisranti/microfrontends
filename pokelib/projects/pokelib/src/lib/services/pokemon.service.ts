@@ -8,6 +8,10 @@ import { Moves } from '../models/moves.model';
 import { PokemonMove } from '../models/pokemon-move.model';
 import { PokemonMoveApi } from '../models/pokemon-move-api.model';
 
+/*
+ * @TODO: Add return types to methods
+ */
+
 @Injectable({
   providedIn: 'root',
 })
