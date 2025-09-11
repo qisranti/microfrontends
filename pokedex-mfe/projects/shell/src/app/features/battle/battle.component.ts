@@ -20,6 +20,13 @@ export class BattleComponent {
 
   pokemonMoves: PokemonMove[] = [];
 
+  // imports: [AsyncPipe],
+  // ...
+  // protected readonly pokemonMoves$ = this.#pokemonService.getPokemonMoves(1);
+  // ...
+  // @let pokemonMoves = (pokemonMoves$ | async)
+  // @for (abilitie of pokemonMoves; track abilitie.name) { ... }
+
   constructor() {
     this.#pokemonService.getPokemonMoves(1).subscribe((moves) => {
       this.pokemonMoves = moves;
