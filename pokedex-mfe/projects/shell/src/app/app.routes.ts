@@ -2,6 +2,12 @@ import { loadRemoteModule } from '@angular-architects/native-federation';
 import { Routes } from '@angular/router';
 import { BattleComponent } from './features/battle/battle.component';
 
+/*
+ * @TODO:
+ * Add empty path
+ * Add wildcard path for not defined paths
+ * Catch errors if loading remote module fails
+ */
 export const routes: Routes = [
     {
         path: 'remote1',
