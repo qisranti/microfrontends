@@ -1,12 +1,24 @@
 <div class="pokemon-battlefield">
   <div>
-    <div class="active-fight">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
-      <h2 class="battle-pokemon-name">Bulbasaur</h2>
-      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+    <div class="fight-abilities">
+      <div class="active-fight">
+        <img class="pokedex-button" src="/pokedex2.png" />
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
+        <h2 class="battle-pokemon-name">Bulbasaur</h2>
+        <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+      </div>
+      <div class="abilities-list-container">
+        @for(abilitie of pokemonMoves; track abilitie.name ){
+        <div class="pokemon-abilities">
+          <h2>{{ abilitie.name | titlecase}}</h2>
+          <p>Power: {{ abilitie.power }}</p>
+        </div>
+        }
+      </div>
     </div>
 
     <div class="player-pokemons">
+      <span class="player-label">Player 1</span>
       @for (pokemon of player1Pokemons ; track pokemon.id) {
       <div class="selected-pokemons" tabindex="0">
         <img
@@ -21,13 +33,25 @@
     </div>
   </div>
   <div>
-    <div class="active-fight">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" />
-      <h2 class="battle-pokemon-name">Charmander</h2>
-      <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+    <div class="fight-abilities">
+      <div class="active-fight">
+        <img class="pokedex-button" src="/pokedex2.png" />
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" />
+        <h2 class="battle-pokemon-name">Charmander</h2>
+        <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+      </div>
+      <div class="abilities-list-container">
+        @for(abilitie of pokemonMoves; track abilitie.name ){
+        <div class="pokemon-abilities">
+          <h2>{{ abilitie.name | titlecase}}</h2>
+          <p>Power: {{ abilitie.power }}</p>
+        </div>
+        }
+      </div>
     </div>
 
     <div class="player-pokemons">
+      <span class="player-label">Player 2</span>
       @for (pokemon of player1Pokemons ; track pokemon.id) {
       <div class="selected-pokemons" tabindex="0">
         <img

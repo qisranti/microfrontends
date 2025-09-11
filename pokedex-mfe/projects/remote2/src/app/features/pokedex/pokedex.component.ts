@@ -23,7 +23,7 @@ import { of } from 'rxjs';
 })
 export class PokedexComponent {
   #pokemonService = inject(PokemonService);
-  #selectedId = this.#pokemonService.getSelectedPokemon();
+  // #selectedId = this.#pokemonService.getSelectedPokemon();
   pokemonId = input<number>();
   injector = inject(EnvironmentInjector);
 

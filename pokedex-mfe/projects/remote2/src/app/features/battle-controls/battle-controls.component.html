@@ -1,3 +1,31 @@
-<p>
-  battle-controls works!
-</p>
+<div>
+  <div class="fight-abilities">
+    <div class="active-fight">
+      <img class="pokedex-button" src="/pokedex2.png" />
+      <img
+        [src]="selectedPokemon.url | pokemonId | pokemonImage"
+        alt="{{ selectedPokemon.name }}"
+      />
+      <h2 class="battle-pokemon-name">{{ selectedPokemon.name }}</h2>
+      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+    </div>
+    <div class="abilities-list-container">
+      @for(abilitie of pokemonMoves; track abilitie.name ){
+      <div class="pokemon-abilities">
+        <h2>{{ abilitie.name | titlecase }}</h2>
+        <p>Power: {{ abilitie.power }}</p>
+      </div>
+      }
+    </div>
+  </div>
+
+  <div class="player-pokemons">
+    <span class="player-label">{{ player }}</span>
+    @for (pokemon of playerPokemons ; track pokemon.name) {
+    <div class="selected-pokemons" tabindex="0">
+      <img [src]="pokemon.url | pokemonId | pokemonImage" alt="{{ pokemon.name }}" />
+      <h2 class="pokemon-name">{{ pokemon.name }}</h2>
+    </div>
+    }
+  </div>
+</div>

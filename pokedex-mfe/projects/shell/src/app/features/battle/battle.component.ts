@@ -1,10 +1,11 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { PokemonService } from 'pokelib';
+import { Moves, PokemonMove, PokemonService } from 'pokelib';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-battle',
-  imports: [MatProgressBarModule],
+  imports: [MatProgressBarModule, CommonModule],
   templateUrl: './battle.component.html',
   styleUrls: ['./battle.component.scss'],
 })
@@ -17,7 +18,12 @@ export class BattleComponent {
     { name: 'Squirtle', id: 7 },
   ];
 
+  pokemonMoves: PokemonMove[] = [];
+
   constructor() {
+    this.#pokemonService.getPokemonMoves(1).subscribe((moves) => {
+      this.pokemonMoves = moves;
+    })
     this.#pokemonService.getPokemonStats(1).subscribe((stats) => {
       console.log('Bulbasaur stats:', stats);
     });
