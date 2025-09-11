@@ -1,6 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Pokemon } from '../models/pokemon.model';
 
+/*
+ * @TODO:
+ * Add return types to methods
+ * Use signals instead of plain objects
+ * State should be readonly
+ * Avoid mutating variables
+ * Try to avoid using delete
+ */
 @Injectable({
   providedIn: 'root',
 })
