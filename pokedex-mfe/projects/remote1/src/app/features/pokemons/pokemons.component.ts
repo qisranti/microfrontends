@@ -8,7 +8,7 @@ import {
   ViewChild,
   ViewContainerRef,
 } from '@angular/core';
-import { PokemonList, PokemonService } from 'pokelib';
+import { PokedexStateService, PokemonList, PokemonService } from 'pokelib';
 import { Pokemon } from 'pokelib';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
@@ -31,11 +31,13 @@ import { PokemonImagePipe } from 'pokelib';
   ],
   templateUrl: './pokemons.component.html',
   styleUrls: ['./pokemons.component.scss'],
+  providers: [PokemonIdPipe],
 })
 export class PokemonsComponent {
   @ViewChild('placePokemonDetails', { read: ViewContainerRef, static: true })
   placePokemonDetails!: ViewContainerRef;
   readonly #pokeService = inject(PokemonService);
+  readonly #pokedexState = inject(PokedexStateService);
   readonly #pokemonIdPipe = inject(PokemonIdPipe);
   readonly #injector = inject(Injector);
   readonly #selectedPokemonId = signal<number | undefined>(undefined);
@@ -60,18 +62,21 @@ export class PokemonsComponent {
         exposedModule: './Pokedex',
       });
 
-      const componentRef = this.placePokemonDetails.createComponent(m.PokedexComponent, {
-        injector: this.#injector,
-      });
+      this.placePokemonDetails.createComponent(m.PokedexComponent);
+      
+      // const componentRef = this.placePokemonDetails.createComponent(m.PokedexComponent, {
+      //   injector: this.#injector,
+      // });
 
-      effect(
-        () => {
-          if (this.#selectedPokemonId()) {
-            componentRef.setInput('pokemonId', this.#selectedPokemonId());
-          }
-        },
-        { injector: this.#injector }
-      );
+      // effect(
+      //   () => {
+      //     if (this.#selectedPokemonId()) {
+      //       componentRef.setInput('pokemonId', this.#selectedPokemonId());
+      //     }
+      //   },
+      //   { injector: this.#injector }
+      // );
+
     } catch (error) {
       console.error('Failed loading the Pokemon Details:', error);
     }
@@ -80,6 +85,7 @@ export class PokemonsComponent {
   selectPokemon(pokemonUrl: string) {
     const pokemonId = this.#pokemonIdPipe.transform(pokemonUrl);
     this.#selectedPokemonId.set(Number(pokemonId));
-    console.log('Selected ID in PokedexComponent:', this.#selectedPokemonId());
+    this.#pokedexState.setPokemonId(pokemonId);
+    console.log('Selected ID in Pokemons List Component:', this.#selectedPokemonId());
   }
 }

@@ -19,17 +19,17 @@ export class PokemonService {
   readonly #baseUrl = 'https://pokeapi.co/api/v2';
   readonly #http = inject(HttpClient);
 
-  getPokemonList(offset: number, limit: number) {
+  getPokemonList(offset: number, limit: number): Observable<PokemonList> {
     const params = new HttpParams().set('limit', limit.toString()).set('offset', offset.toString());
 
     return this.#http.get<PokemonList>(`${this.#baseUrl}/pokemon`, { params });
   }
 
-  getPokemonImage(pokemonId: number) {
+  getPokemonImage(pokemonId: number) : string {
     return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png`;
   }
 
-  getPokemonDetails(pokemonId: number) {
+  getPokemonDetails(pokemonId: number) : Observable<PokemonDetails> {
     return this.#http.get<PokemonDetails>(`${this.#baseUrl}/pokemon/${pokemonId}`);
   }
 

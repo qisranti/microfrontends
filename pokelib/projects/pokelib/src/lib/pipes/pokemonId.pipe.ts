@@ -5,15 +5,14 @@ import { Injectable, Pipe, PipeTransform } from '@angular/core';
   standalone: true
 })
 // @TODO: Remove this decorator
-@Injectable({
-  providedIn: 'root'
-})
+// Injectable removed
+
 export class PokemonIdPipe implements PipeTransform {
 
   // @TODO: Return a number (make sure to check the type)
-  transform(url: string): string {
+  transform(url: string): number {
     const parts = url.split('/');
-    return parts[parts.length - 2];
+    return Number(parts[parts.length - 2]);
   }
 
 }

@@ -5,12 +5,10 @@ import { Injectable, Pipe, PipeTransform } from '@angular/core';
   standalone: true
 })
 // @TODO: Delete this decorator
-@Injectable({
-  providedIn: 'root'
-})
+// Injectable removed
 export class PokemonImagePipe implements PipeTransform {
 
-  transform(id: string): string {
+  transform(id: number): string {
     return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
   }
 

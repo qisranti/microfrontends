@@ -13,6 +13,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
   imports: [MatProgressBarModule, CommonModule, PokemonIdPipe, PokemonImagePipe],
   templateUrl: './battle-controls.component.html',
   styleUrls: ['./battle-controls.component.scss'],
+  providers: [PokemonIdPipe],
 })
 export class BattleControlsComponent {
   @Input() player!: string;

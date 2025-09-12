@@ -6,6 +6,7 @@ export * from './lib/pokelib';
 // Services
 export * from './lib/services/pokemon.service';
 export * from './lib/services/pokemon-battle.service';
+export * from './lib/services/pokedex-state.service';
 // Models
 export * from './lib/models/pokemon.model';
 export * from './lib/models/pokemon-details.model';

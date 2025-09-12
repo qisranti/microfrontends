@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { computed, Injectable, signal } from '@angular/core';
 import { Pokemon } from '../models/pokemon.model';
 
 /*
@@ -13,16 +13,32 @@ import { Pokemon } from '../models/pokemon.model';
   providedIn: 'root',
 })
 export class PokemonBattleService {
-  #playersPokemons: { [player: string]: Pokemon[] } = {};
-
-  setPlayerPokemons(player: string, pokemons: Pokemon[]) {
-    this.#playersPokemons[player] = pokemons;
-  }
-  getPlayerPokemons(player: string): Pokemon[] {
-    return this.#playersPokemons[player] || [];
-  }
-  clearPlayerPokemons(player: string) {
-    delete this.#playersPokemons[player];
-  }
+  readonly #playersPokemons = signal(new Map<string, readonly Pokemon[]>());
   
+  // Record mas performance?
+  readonly #recordPlayersPokemons = signal<Record<string, readonly Pokemon[]>>({"":[]});
+
+  setPlayerPokemons(player: string, pokemons: readonly Pokemon[]): void {
+    const currentMap = new Map(this.#playersPokemons());
+    currentMap.set(player, [...pokemons]);
+    this.#playersPokemons.set(currentMap);
+  }
+
+  getPlayerPokemons(player: string): readonly Pokemon[] {
+    return this.#playersPokemons().get(player) ?? [];
+  }
+
+  clearPlayerPokemons(player: string): void {
+    const currentMap = new Map(this.#playersPokemons());
+    if (currentMap.has(player)) {
+      currentMap.set(player, []);
+      this.#playersPokemons.set(currentMap);
+    }
+  }
+
+  clearPlayersPokemons(): void {
+    this.#playersPokemons.set(new Map<string, readonly Pokemon[]>());
+  }
+
+  readonly allPlayersPokemons = computed(() => this.#playersPokemons());
 }
