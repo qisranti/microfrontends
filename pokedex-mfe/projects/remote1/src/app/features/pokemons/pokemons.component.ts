@@ -62,7 +62,9 @@ export class PokemonsComponent {
         exposedModule: './Pokedex',
       });
 
-      this.placePokemonDetails.createComponent(m.PokedexComponent);
+      this.placePokemonDetails.createComponent(m.PokedexComponent, {
+        injector: this.#injector,
+      });
       
       // const componentRef = this.placePokemonDetails.createComponent(m.PokedexComponent, {
       //   injector: this.#injector,

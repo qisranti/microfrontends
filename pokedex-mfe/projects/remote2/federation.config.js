@@ -1,16 +1,18 @@
 const { withNativeFederation, shareAll } = require('@angular-architects/native-federation/config');
 
 module.exports = withNativeFederation({
-
   name: 'remote2',
 
   exposes: {
     './Component': './projects/remote2/src/app/app.ts',
     './Pokedex': './projects/remote2/src/app/features/pokedex/pokedex.component.ts',
+    './BattleControls':
+      './projects/remote2/src/app/features/battle-controls/battle-controls.component.ts',
   },
 
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
+    pokelib: { singleton: true, strictVersion: true, requiredVersion: 'auto' },
   },
 
   skip: [
@@ -28,7 +30,6 @@ module.exports = withNativeFederation({
     // New feature for more performance and avoiding
     // issues with node libs. Comment this out to
     // get the traditional behavior:
-    ignoreUnusedDeps: true
-  }
-  
+    ignoreUnusedDeps: true,
+  },
 });

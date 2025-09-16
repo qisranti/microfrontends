@@ -11,8 +11,8 @@ import {
 } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
-import { PokedexStateService, PokemonService } from 'pokelib';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { PokedexStateService, PokemonDetails, PokemonService } from 'pokelib';
+import { toObservable, toSignal } from '@angular/core/rxjs-interop';
 import { of, switchMap } from 'rxjs';
 
 @Component({
@@ -22,48 +22,71 @@ import { of, switchMap } from 'rxjs';
   styleUrls: ['./pokedex.component.scss'],
 })
 export class PokedexComponent {
-  
-  #pokemonService = inject(PokemonService);
+  readonly #pokemonService = inject(PokemonService);
   readonly #pokedexState = inject(PokedexStateService);
-  readonly pokemonId = this.#pokedexState.pokemonId$;
+  readonly pokemonId = computed(() => this.#pokedexState.pokemonId());
 
-  readonly pokemon$ = this.pokemonId.pipe(
-    switchMap((id) => this.#pokemonService.getPokemonDetails(id)),
+  readonly pokemon = toSignal<PokemonDetails | null>(
+    toObservable(this.pokemonId).pipe(
+      switchMap((id) => {
+        // pa validar si es numero
+        if (typeof id === 'number' && !isNaN(id) && id > 0) {
+          return this.#pokemonService.getPokemonDetails(id);
+        }
+        
+        return of(null);
+      })
+    )
   );
-
-  // #selectedId = this.#pokemonService.getSelectedPokemon();
-  // pokemonId = input<number>();
-  // injector = inject(EnvironmentInjector);
-
-  // pokemon = toSignal(this.#pokemonService.getPokemonDetails(this.#selectedId()));
-
-  // @TODO: Implemente PokeState with pokeId subject and update it from remote1
-  // readonly #pokeState = inject(PokeState);
-  // readonly #pokeId$ = this.#pokeState.getPokemonId$;
-  // readonly pokemon$ = this.pokeId$.pipe(
-  //   switchMap((pokeId) => this.#pokemonService.getPokemonDetails(id)),
-  // );
-  // ... (HTML)
-  // pokemon$ | async
-
-  // pokemon$ = computed(() => {
-  //   const id = this.pokemonId();
-  //   if (id) {
-  //     return this.#pokemonService.getPokemonDetails(id);
-  //   }
-  //   return null;
-  // });
-
-  // 
-
-  constructor() {
-    // effect((): void => {
-    //   //console.log('Selected Pokémon changed:', this.#selectedId$());
-    //   runInInjectionContext(this.injector, () => {
-    //     // const pokemon = toSignal(of(null), { injector: this.injector, initialValue: null });
-    //   });
-
-    //   console.log('Fetching new Pokémon details...');
-    // });
-  }
 }
+
+// readonly pokemon$ = this.pokemonId.pipe(
+//   switchMap((id) => this.#pokemonService.getPokemonDetails(id)),
+// );
+
+// pokemon = toSignal(this.#pokemonService.getPokemonDetails(this.pokemonId));
+
+// readonly pokemon = toSignal(
+//   toObservable(this.#pokedexState.pokemonId).pipe(
+//     switchMap((id) => {
+//       return id ? this.#pokemonService.getPokemonDetails(id) : of(null);
+//     })
+//   )
+// );
+
+// #selectedId = this.#pokemonService.getSelectedPokemon();
+// pokemonId = input<number>();
+// injector = inject(EnvironmentInjector);
+
+// pokemon = toSignal(this.#pokemonService.getPokemonDetails(this.#selectedId()));
+
+// @TODO: Implemente PokeState with pokeId subject and update it from remote1
+// readonly #pokeState = inject(PokeState);
+// readonly #pokeId$ = this.#pokeState.getPokemonId$;
+// readonly pokemon$ = this.pokeId$.pipe(
+//   switchMap((pokeId) => this.#pokemonService.getPokemonDetails(id)),
+// );
+// ... (HTML)
+// pokemon$ | async
+
+// pokemon$ = computed(() => {
+//   const currentId = this.pokemonId();
+//   if (currentId) {
+//     return this.#pokemonService.getPokemonDetails(currentId);
+//   }
+//   return null;
+// });
+
+//
+
+// constructor() {
+//   effect((): void => {
+//     //console.log('Selected Pokémon changed:', this.#selectedId$());
+//     runInInjectionContext(this.injector, () => {
+//       const pokemon = toSignal(of(null), { injector: this.injector, initialValue: null });
+//     });
+
+//   //   console.log('Fetching new Pokémon details...');
+//   });
+// }
+// }

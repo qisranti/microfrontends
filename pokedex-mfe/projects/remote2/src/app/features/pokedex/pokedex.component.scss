@@ -9,7 +9,6 @@
 
 .main-card {
   display: flex;
-  height: 100%;
   width: 350px;
   padding: 20px;
   background-color: #ff0000;
@@ -23,31 +22,31 @@
   text-align: center;
   color: #73cec0;
   letter-spacing: 3px;
-  font-family: 'Pokemon-DP-Pro-Solid';
+  font-family: 'PressStart2P';
 }
 
 .pokemon-name {
   text-align: center;
-  font-family: 'Pokemon-DP-Pro-Hollow';
+  font-family: 'PressStart2P';
   letter-spacing: 3px;
 }
 
 .pokedex-subtitle{
   text-align: center;
-  font-family: 'Pokemon-DP-Pro-Solid';
+  font-family: 'PressStart2P';
   letter-spacing: 3px;
 }
 
 p{
   margin: 0;
-  font-family: 'Pokemon-DP-Pro-Solid';
+  font-family: 'PressStart2P';
 }
 
 li{
-  font-family: 'Pokemon-DP-Pro-Hollow';
+  font-family: 'PressStart2P';
 }
 .variable-style{
-  font-family: 'Pokemon-DP-Pro-Hollow';
+  font-family: 'PressStart2P';
   letter-spacing: 2px;
   font-weight: bold;
 }
@@ -71,7 +70,7 @@ li{
 }
 
 .pokedex-display{
-    height: 200px;
+    height: fit-content;
     width: 100%;
     text-align: center;
     background-color: #73cec0;

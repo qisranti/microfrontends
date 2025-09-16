@@ -4,28 +4,33 @@
       <h2 class="pokedex-title">Pokedex</h2>
     </div>
     <mat-divider />
-    @let pokemon = pokemon$ | async; 
-    @if (pokemon) {
+    @if (pokemon()) {
     <div class="pokedex-display">
       <img
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{
-          pokemon.id
+          pokemon()?.id
         }}.png"
       />
-      <h2 class="pokemon-name">{{ pokemon.name | titlecase}}</h2>
-    </div>
-    <p>ID: <span class="variable-style">{{ pokemon.id }}</span></p>
-    <p>Height: <span class="variable-style">{{ pokemon.height }}</span></p>
-    <p>Weight: <span class="variable-style">{{ pokemon.weight }}</span></p>
-    <h3 class="pokedex-subtitle">Skills:</h3>
-    <ul>
-      @for (ability of pokemon.abilities; track ability.ability.name) {
-      <li class="variable-style">{{ ability.ability.name | titlecase}}</li>
-      }
-    </ul>
+      <h2 class="pokemon-name">{{ pokemon()?.name | titlecase }}</h2>
 
+      <p>
+        ID: <span class="variable-style">{{ pokemon()?.id }}</span>
+      </p>
+      <p>
+        Height: <span class="variable-style">{{ pokemon()?.height }}</span>
+      </p>
+      <p>
+        Weight: <span class="variable-style">{{ pokemon()?.weight }}</span>
+      </p>
+      <h3 class="pokedex-subtitle">Skills:</h3>
+      <ul>
+        @for (ability of pokemon()?.abilities; track ability.ability.name) {
+        <li class="variable-style">{{ ability.ability.name | titlecase }}</li>
+        }
+      </ul>
+    </div>
     } @else {
-    <p style="font-family: 'Pokemon-DP-Pro-Solid';">Select a Pokemon to see details.</p>
+    <p style="font-family: 'Pokemon-DP-Pro-Solid'">Select a Pokemon to see details.</p>
     }
   </mat-card>
 </div>
