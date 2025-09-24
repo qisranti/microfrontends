@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class PokedexStateService {
   // #pokemonId = new BehaviorSubject<number>(1);
-  #pokemonId = signal<number | any>(1);
+  #pokemonId = signal<number>(1);
 
   get pokemonId() {
     // return this.#pokemonId.asObservable();

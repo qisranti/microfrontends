@@ -8,6 +8,8 @@ module.exports = withNativeFederation({
       strictVersion: true,
       requiredVersion: 'auto',
     },
+    '@angular/material': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+    '@angular/cdk': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
     pokelib: { singleton: true, strictVersion: true, requiredVersion: 'auto' },
   },
 

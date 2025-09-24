@@ -1,9 +1,9 @@
-<div>
+<div class="battle-controls-container">
   <div class="fight-abilities">
     <div class="active-fight">
       @if (selectedPokemon()) {
 
-      <img class="pokedex-button" src="/pokedex2.png" />
+      <img class="pokedex-button" src="/pokedex2.png" (click)="showPokedex()" />
       <img
         [src]="selectedPokemon().url | pokemonId | pokemonImage"
         alt="{{ selectedPokemon().name }}"
@@ -20,6 +20,9 @@
       </div>
       }
     </div>
+    @if(showPokedexFlag()){
+    <app-pokedex class="pokedex" [pokemonId]="selectedPokemon().url | pokemonId"></app-pokedex>
+    }
   </div>
 
   <div class="player-pokemons">

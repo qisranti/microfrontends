@@ -7,7 +7,7 @@ import {
   ViewChild,
   ViewContainerRef,
 } from '@angular/core';
-import { Moves, PokemonMove, PokemonService, Pokemon } from 'pokelib';
+import { Moves, PokemonMove, PokemonService, Pokemon, BattleData } from 'pokelib';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { CommonModule } from '@angular/common';
 import { loadRemoteModule } from '@angular-architects/native-federation';
@@ -23,6 +23,7 @@ export class BattleComponent implements AfterViewInit {
   readonly #injector = inject(Injector);
   @ViewChild('placePlayer1', { read: ViewContainerRef, static: true })
   placePlayer1!: ViewContainerRef;
+  @ViewChild('placePlayer2', { read: ViewContainerRef, static: true })
   placePlayer2!: ViewContainerRef;
 
   playerName = 'Ash';
@@ -32,10 +33,10 @@ export class BattleComponent implements AfterViewInit {
     { name: 'Venusaur', url: 'https://pokeapi.co/api/v2/pokemon/3/' },
   ];
 
-  player1Pokemons = [
-    { name: 'Bulbasaur', id: 1 },
-    { name: 'Charmander', id: 4 },
-    { name: 'Squirtle', id: 7 },
+  player2Pokemons = [
+    { name: 'Charmander', url: 'https://pokeapi.co/api/v2/pokemon/4/' },
+    { name: 'Charmeleon', url: 'https://pokeapi.co/api/v2/pokemon/5/' },
+    { name: 'Charizard', url: 'https://pokeapi.co/api/v2/pokemon/6/' },
   ];
 
   pokemonMoves: PokemonMove[] = [];
@@ -73,13 +74,22 @@ export class BattleComponent implements AfterViewInit {
         exposedModule: './BattleControls',
       });
 
-      const playerRef = this.placePlayer1.createComponent(m.BattleControlsComponent, {
+      const player1Ref = this.placePlayer1.createComponent(m.BattleControlsComponent, {
         injector: this.#injector,
       });
-      playerRef.setInput('playerName', this.playerName);
-      playerRef.setInput('playerPokemons', this.pokemons);
+      player1Ref.setInput('playerName', this.playerName);
+      player1Ref.setInput('playerPokemons', this.pokemons);
+
+      const player2Ref = this.placePlayer2.createComponent(m.BattleControlsComponent, {
+        injector: this.#injector,
+      });
+      player2Ref.setInput('playerName', 'Misty');
+      player2Ref.setInput('playerPokemons', this.player2Pokemons);
     } catch (error) {
       console.error('Failed loading the Player 1', error);
     }
   }
+
+
+
 }

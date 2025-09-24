@@ -2,8 +2,10 @@ import {
   AfterViewInit,
   Component,
   effect,
+  EnvironmentInjector,
   inject,
   Injector,
+  runInInjectionContext,
   signal,
   ViewChild,
   ViewContainerRef,
@@ -39,7 +41,7 @@ export class PokemonsComponent {
   readonly #pokeService = inject(PokemonService);
   readonly #pokedexState = inject(PokedexStateService);
   readonly #pokemonIdPipe = inject(PokemonIdPipe);
-  readonly #injector = inject(Injector);
+  readonly #injector = inject(EnvironmentInjector);
   readonly #selectedPokemonId = signal<number | undefined>(undefined);
 
   limit = 120;
@@ -62,23 +64,15 @@ export class PokemonsComponent {
         exposedModule: './Pokedex',
       });
 
-      this.placePokemonDetails.createComponent(m.PokedexComponent, {
+      const componentRef = this.placePokemonDetails.createComponent(m.PokedexComponent, {
         injector: this.#injector,
       });
-      
-      // const componentRef = this.placePokemonDetails.createComponent(m.PokedexComponent, {
-      //   injector: this.#injector,
-      // });
-
-      // effect(
-      //   () => {
-      //     if (this.#selectedPokemonId()) {
-      //       componentRef.setInput('pokemonId', this.#selectedPokemonId());
-      //     }
-      //   },
-      //   { injector: this.#injector }
-      // );
-
+      runInInjectionContext(this.#injector, () => {
+        effect(() => {
+          const currentId = this.#pokedexState.pokemonId();
+          componentRef.setInput('pokemonId', currentId);
+        });
+      });
     } catch (error) {
       console.error('Failed loading the Pokemon Details:', error);
     }

@@ -6,6 +6,7 @@ module.exports = withNativeFederation({
   exposes: {
     './Component': './projects/remote1/src/app/app.ts',
     './Pokemons': './projects/remote1/src/app/features/pokemons/pokemons.component.ts',
+    './PokemonsSelection': './projects/remote1/src/app/features/pokemon-selection/pokemon-selection.component.ts',
   },
 
   shared: {

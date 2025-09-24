@@ -1,3 +1,40 @@
-<p>
-  pokemon-selection works!
-</p>
+<div class="container">
+  <div #placePlayerBattleControls></div>
+  @if (ready()==false) {
+  <mat-card class="main-card">
+    <div class="header">
+      <h3>Select your team!</h3>
+      @if (selectedPokemons().length == 3) {
+      <form (ngSubmit)="startBattle()">
+        <mat-form-field>
+          <mat-label>Player Name</mat-label>
+          <input matInput name="playerName" [(ngModel)]="playerName" required />
+        </mat-form-field>
+
+        <button mat-button color="primary" type="submit">Start Battle</button>
+      </form>
+      }
+    </div>
+
+    <mat-divider />
+    <div class="card-grid-wrapper">
+      <div class="card-grid-container">
+        @for (pokemon of pokemons$ | async; track pokemon.name) {
+        <div class="card-grid-item">
+          <mat-card
+            class="pokemon-card"
+            (click)="onCardClick(pokemon)"
+            [class.selected-card]="selectedPokemons().includes(pokemon)"
+          >
+            <mat-card-title>{{ pokemon.name | titlecase }}</mat-card-title>
+            <mat-card-content>
+              <img [src]="pokemon.url | pokemonId | pokemonImage" alt="{{ pokemon.name }}" />
+            </mat-card-content>
+          </mat-card>
+        </div>
+        }
+      </div>
+    </div>
+  </mat-card>
+  }
+</div>
