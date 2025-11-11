@@ -168,4 +168,4 @@ componentRef.setInput('pokemonId', currentId);
 ```
 
 ## Conclusion
-The actual approach it's the right way to do it as this ensures that the Pokedex Component it's an standalone component and can be utilized in any part of the project.
+The actual approach it's the right way to do it as this ensures that the Pokedex Component it's an standalone component and can be used in any part of the project.

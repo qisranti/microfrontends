@@ -64,9 +64,13 @@ export class PokemonsComponent {
         exposedModule: './Pokedex',
       });
 
-      const componentRef = this.placePokemonDetails.createComponent(m.PokedexComponent, {
-        injector: this.#injector,
-      });
+      //
+      // const componentRef = this.placePokemonDetails.createComponent(m.PokedexComponent, {
+      //   injector: this.#injector,
+      // });
+
+      const componentRef = this.placePokemonDetails.createComponent(m.PokedexComponent);
+
       runInInjectionContext(this.#injector, () => {
         effect(() => {
           const currentId = this.#pokedexState.pokemonId();

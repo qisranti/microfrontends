@@ -1,0 +1,306 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Poke.Api",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/v1/Battle": {
+      "put": {
+        "tags": [
+          "Battle"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Battle"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Battle"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Battle"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Battle"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Battle"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Battle"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Battle"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Battle"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/BattlePokemons/GetBattlePlayerPokemons": {
+      "get": {
+        "tags": [
+          "BattlePokemons"
+        ],
+        "parameters": [
+          {
+            "name": "battleId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "player",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/BattlePokemons": {
+      "post": {
+        "tags": [
+          "BattlePokemons"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BattlePokemons"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BattlePokemons"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BattlePokemons"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/BattlePokemons/AttackPokemon": {
+      "post": {
+        "tags": [
+          "BattlePokemons"
+        ],
+        "parameters": [
+          {
+            "name": "Attack",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BattlePokemons"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BattlePokemons"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BattlePokemons"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Battle": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "player1Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "player2Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "winner": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BattlePokemons": {
+        "required": [
+          "playerName",
+          "pokemonName"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "battleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "playerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "pokemonName": {
+            "type": "string",
+            "nullable": true
+          },
+          "pokemonHp": {
+            "type": "number",
+            "format": "float"
+          },
+          "pokemonId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isAlive": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

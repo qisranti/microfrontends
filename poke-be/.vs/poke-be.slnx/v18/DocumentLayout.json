@@ -1,0 +1,734 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\Tests\\microfrontends\\poke-be\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A85D6A6-43FA-424C-A045-5AFFE9F215C2}|poke-be\\Poke.Api.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke-be\\controllers\\battlepokemonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A85D6A6-43FA-424C-A045-5AFFE9F215C2}|poke-be\\Poke.Api.csproj|solutionrelative:poke-be\\controllers\\battlepokemonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A85D6A6-43FA-424C-A045-5AFFE9F215C2}|poke-be\\Poke.Api.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke-be\\controllers\\battlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A85D6A6-43FA-424C-A045-5AFFE9F215C2}|poke-be\\Poke.Api.csproj|solutionrelative:poke-be\\controllers\\battlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C62896-ACB1-4502-95E3-4BBD6695C1B3}|Poke.Domain\\Poke.Domain.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.domain\\entities\\battlepokemons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C62896-ACB1-4502-95E3-4BBD6695C1B3}|Poke.Domain\\Poke.Domain.csproj|solutionrelative:poke.domain\\entities\\battlepokemons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.infrastructure\\persistence\\postgresql\\entities\\battleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|solutionrelative:poke.infrastructure\\persistence\\postgresql\\entities\\battleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\features\\battlepokemons\\command\\createbattlepokemons\\createbattlepokemonscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\features\\battlepokemons\\command\\createbattlepokemons\\createbattlepokemonscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\features\\battlepokemons\\command\\attackpokemon\\attackpokemoncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\features\\battlepokemons\\command\\attackpokemon\\attackpokemoncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\features\\battlepokemons\\command\\attackpokemon\\attackpokemoncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\features\\battlepokemons\\command\\attackpokemon\\attackpokemoncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\features\\battlepokemons\\command\\createbattlepokemons\\createbattlepokemonscommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\features\\battlepokemons\\command\\createbattlepokemons\\createbattlepokemonscommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.infrastructure\\persistence\\postgresql\\repositories\\battlepokemonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|solutionrelative:poke.infrastructure\\persistence\\postgresql\\repositories\\battlepokemonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\contracts\\persistence\\ibattlepokemonsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\contracts\\persistence\\ibattlepokemonsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\contracts\\persistence\\ibattlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\contracts\\persistence\\ibattlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\contracts\\persistence\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\contracts\\persistence\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\features\\battlepokemons\\queries\\getbattlepokemons\\getbattlepokemonsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\features\\battlepokemons\\queries\\getbattlepokemons\\getbattlepokemonsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\features\\battlepokemons\\queries\\getbattlepokemons\\getbattlepokemonsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\features\\battlepokemons\\queries\\getbattlepokemons\\getbattlepokemonsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.infrastructure\\persistence\\postgresql\\configurations\\battlepokemonconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|solutionrelative:poke.infrastructure\\persistence\\postgresql\\configurations\\battlepokemonconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.infrastructure\\persistence\\postgresql\\configurations\\battleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|solutionrelative:poke.infrastructure\\persistence\\postgresql\\configurations\\battleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\features\\battles\\command\\createbattle\\createbattlecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\features\\battles\\command\\createbattle\\createbattlecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\dtos\\battlepokemonsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\dtos\\battlepokemonsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\dtos\\battledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\dtos\\battledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.infrastructure\\persistence\\postgresql\\entities\\battlepokemonentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|solutionrelative:poke.infrastructure\\persistence\\postgresql\\entities\\battlepokemonentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C62896-ACB1-4502-95E3-4BBD6695C1B3}|Poke.Domain\\Poke.Domain.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.domain\\entities\\battle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C62896-ACB1-4502-95E3-4BBD6695C1B3}|Poke.Domain\\Poke.Domain.csproj|solutionrelative:poke.domain\\entities\\battle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.infrastructure\\persistence\\postgresql\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|solutionrelative:poke.infrastructure\\persistence\\postgresql\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\features\\battles\\command\\createbattle\\createbattlecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\features\\battles\\command\\createbattle\\createbattlecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\features\\battles\\queries\\getallbattles\\getallbattlesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\features\\battles\\queries\\getallbattles\\getallbattlesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\features\\battles\\queries\\getallbattles\\getallbattlesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\features\\battles\\queries\\getallbattles\\getallbattlesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.infrastructure\\persistence\\postgresql\\mappings\\mappingsprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|solutionrelative:poke.infrastructure\\persistence\\postgresql\\mappings\\mappingsprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\features\\battles\\command\\setwinner\\setwinnercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\features\\battles\\command\\setwinner\\setwinnercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\features\\battles\\command\\setwinner\\setwinnercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\features\\battles\\command\\setwinner\\setwinnercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.infrastructure\\persistence\\postgresql\\repositories\\battlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|solutionrelative:poke.infrastructure\\persistence\\postgresql\\repositories\\battlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.infrastructure\\persistence\\postgresql\\persistenceserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|solutionrelative:poke.infrastructure\\persistence\\postgresql\\persistenceserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A85D6A6-43FA-424C-A045-5AFFE9F215C2}|poke-be\\Poke.Api.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke-be\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A85D6A6-43FA-424C-A045-5AFFE9F215C2}|poke-be\\Poke.Api.csproj|solutionrelative:poke-be\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\models\\createcommandresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\models\\createcommandresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\models\\baseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\models\\baseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\poke.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\poke.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.infrastructure\\persistence\\postgresql\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|solutionrelative:poke.infrastructure\\persistence\\postgresql\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A85D6A6-43FA-424C-A045-5AFFE9F215C2}|poke-be\\Poke.Api.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke-be\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2A85D6A6-43FA-424C-A045-5AFFE9F215C2}|poke-be\\Poke.Api.csproj|solutionrelative:poke-be\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.infrastructure\\poke.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|solutionrelative:poke.infrastructure\\poke.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C62896-ACB1-4502-95E3-4BBD6695C1B3}|Poke.Domain\\Poke.Domain.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.domain\\poke.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C4C62896-ACB1-4502-95E3-4BBD6695C1B3}|Poke.Domain\\Poke.Domain.csproj|solutionrelative:poke.domain\\poke.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A85D6A6-43FA-424C-A045-5AFFE9F215C2}|poke-be\\Poke.Api.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke-be\\poke.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2A85D6A6-43FA-424C-A045-5AFFE9F215C2}|poke-be\\Poke.Api.csproj|solutionrelative:poke-be\\poke.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A85D6A6-43FA-424C-A045-5AFFE9F215C2}|poke-be\\Poke.Api.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke-be\\poke-be.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{2A85D6A6-43FA-424C-A045-5AFFE9F215C2}|poke-be\\Poke.Api.csproj|solutionrelative:poke-be\\poke-be.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.application\\applicationserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC240B4-FCED-417C-9391-0B2426D2AFF3}|Poke.Application\\Poke.Application.csproj|solutionrelative:poke.application\\applicationserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|c:\\projects\\tests\\microfrontends\\poke-be\\poke.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E18B41B5-0EC8-496E-99C4-7474ED316D0F}|Poke.Infrastructure\\Poke.Infrastructure.csproj|solutionrelative:poke.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateBattlePokemonsCommand.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\BattlePokemons\\Command\\CreateBattlePokemons\\CreateBattlePokemonsCommand.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\Features\\BattlePokemons\\Command\\CreateBattlePokemons\\CreateBattlePokemonsCommand.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\BattlePokemons\\Command\\CreateBattlePokemons\\CreateBattlePokemonsCommand.cs",
+              "RelativeToolTip": "Poke.Application\\Features\\BattlePokemons\\Command\\CreateBattlePokemons\\CreateBattlePokemonsCommand.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAArwAkAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T22:44:49.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BattlePokemonsController.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\poke-be\\Controllers\\BattlePokemonsController.cs",
+              "RelativeDocumentMoniker": "poke-be\\Controllers\\BattlePokemonsController.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\poke-be\\Controllers\\BattlePokemonsController.cs",
+              "RelativeToolTip": "poke-be\\Controllers\\BattlePokemonsController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCMAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T13:49:19.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BattlePokemons.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Domain\\Entities\\BattlePokemons.cs",
+              "RelativeDocumentMoniker": "Poke.Domain\\Entities\\BattlePokemons.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Domain\\Entities\\BattlePokemons.cs",
+              "RelativeToolTip": "Poke.Domain\\Entities\\BattlePokemons.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwAsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T14:01:17.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BattleEntity.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\Entities\\BattleEntity.cs",
+              "RelativeDocumentMoniker": "Poke.Infrastructure\\Persistence\\PostgreSQL\\Entities\\BattleEntity.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\Entities\\BattleEntity.cs",
+              "RelativeToolTip": "Poke.Infrastructure\\Persistence\\PostgreSQL\\Entities\\BattleEntity.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T12:50:48.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BattleController.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\poke-be\\Controllers\\BattleController.cs",
+              "RelativeDocumentMoniker": "poke-be\\Controllers\\BattleController.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\poke-be\\Controllers\\BattleController.cs",
+              "RelativeToolTip": "poke-be\\Controllers\\BattleController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAqwB4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T13:49:05.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreateBattlePokemonsCommandHandler.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\BattlePokemons\\Command\\CreateBattlePokemons\\CreateBattlePokemonsCommandHandler.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\Features\\BattlePokemons\\Command\\CreateBattlePokemons\\CreateBattlePokemonsCommandHandler.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\BattlePokemons\\Command\\CreateBattlePokemons\\CreateBattlePokemonsCommandHandler.cs",
+              "RelativeToolTip": "Poke.Application\\Features\\BattlePokemons\\Command\\CreateBattlePokemons\\CreateBattlePokemonsCommandHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwBwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T22:44:55.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IBattlePokemonsRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Contracts\\Persistence\\IBattlePokemonsRepository.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\Contracts\\Persistence\\IBattlePokemonsRepository.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Contracts\\Persistence\\IBattlePokemonsRepository.cs",
+              "RelativeToolTip": "Poke.Application\\Contracts\\Persistence\\IBattlePokemonsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:01:25.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AttackPokemonCommand.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\BattlePokemons\\Command\\AttackPokemon\\AttackPokemonCommand.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\Features\\BattlePokemons\\Command\\AttackPokemon\\AttackPokemonCommand.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\BattlePokemons\\Command\\AttackPokemon\\AttackPokemonCommand.cs",
+              "RelativeToolTip": "Poke.Application\\Features\\BattlePokemons\\Command\\AttackPokemon\\AttackPokemonCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T19:46:25.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AttackPokemonCommandHandler.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\BattlePokemons\\Command\\AttackPokemon\\AttackPokemonCommandHandler.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\Features\\BattlePokemons\\Command\\AttackPokemon\\AttackPokemonCommandHandler.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\BattlePokemons\\Command\\AttackPokemon\\AttackPokemonCommandHandler.cs",
+              "RelativeToolTip": "Poke.Application\\Features\\BattlePokemons\\Command\\AttackPokemon\\AttackPokemonCommandHandler.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwBoAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T19:46:32.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IBaseRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Contracts\\Persistence\\IBaseRepository.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\Contracts\\Persistence\\IBaseRepository.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Contracts\\Persistence\\IBaseRepository.cs",
+              "RelativeToolTip": "Poke.Application\\Contracts\\Persistence\\IBaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:02:15.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GetBattlePokemonsQuery.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\BattlePokemons\\Queries\\GetBattlePokemons\\GetBattlePokemonsQuery.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\Features\\BattlePokemons\\Queries\\GetBattlePokemons\\GetBattlePokemonsQuery.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\BattlePokemons\\Queries\\GetBattlePokemons\\GetBattlePokemonsQuery.cs",
+              "RelativeToolTip": "Poke.Application\\Features\\BattlePokemons\\Queries\\GetBattlePokemons\\GetBattlePokemonsQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T22:45:04.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GetBattlePokemonsQueryHandler.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\BattlePokemons\\Queries\\GetBattlePokemons\\GetBattlePokemonsQueryHandler.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\Features\\BattlePokemons\\Queries\\GetBattlePokemons\\GetBattlePokemonsQueryHandler.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\BattlePokemons\\Queries\\GetBattlePokemons\\GetBattlePokemonsQueryHandler.cs",
+              "RelativeToolTip": "Poke.Application\\Features\\BattlePokemons\\Queries\\GetBattlePokemons\\GetBattlePokemonsQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T22:45:09.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IBattleRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Contracts\\Persistence\\IBattleRepository.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\Contracts\\Persistence\\IBattleRepository.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Contracts\\Persistence\\IBattleRepository.cs",
+              "RelativeToolTip": "Poke.Application\\Contracts\\Persistence\\IBattleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:01:13.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BattlePokemonRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\Repositories\\BattlePokemonRepository.cs",
+              "RelativeDocumentMoniker": "Poke.Infrastructure\\Persistence\\PostgreSQL\\Repositories\\BattlePokemonRepository.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\Repositories\\BattlePokemonRepository.cs",
+              "RelativeToolTip": "Poke.Infrastructure\\Persistence\\PostgreSQL\\Repositories\\BattlePokemonRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAWwBsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:13:31.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BattlePokemonConfiguration.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\Configurations\\BattlePokemonConfiguration.cs",
+              "RelativeDocumentMoniker": "Poke.Infrastructure\\Persistence\\PostgreSQL\\Configurations\\BattlePokemonConfiguration.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\Configurations\\BattlePokemonConfiguration.cs",
+              "RelativeToolTip": "Poke.Infrastructure\\Persistence\\PostgreSQL\\Configurations\\BattlePokemonConfiguration.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T13:31:51.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BattleConfiguration.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\Configurations\\BattleConfiguration.cs",
+              "RelativeDocumentMoniker": "Poke.Infrastructure\\Persistence\\PostgreSQL\\Configurations\\BattleConfiguration.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\Configurations\\BattleConfiguration.cs",
+              "RelativeToolTip": "Poke.Infrastructure\\Persistence\\PostgreSQL\\Configurations\\BattleConfiguration.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T13:30:03.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreateBattleCommandHandler.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\Battles\\Command\\CreateBattle\\CreateBattleCommandHandler.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\Features\\Battles\\Command\\CreateBattle\\CreateBattleCommandHandler.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\Battles\\Command\\CreateBattle\\CreateBattleCommandHandler.cs",
+              "RelativeToolTip": "Poke.Application\\Features\\Battles\\Command\\CreateBattle\\CreateBattleCommandHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T13:39:04.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BattlePokemonsDTO.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\DTOs\\BattlePokemonsDTO.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\DTOs\\BattlePokemonsDTO.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\DTOs\\BattlePokemonsDTO.cs",
+              "RelativeToolTip": "Poke.Application\\DTOs\\BattlePokemonsDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T20:47:17.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BattleDTO.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\DTOs\\BattleDTO.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\DTOs\\BattleDTO.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\DTOs\\BattleDTO.cs",
+              "RelativeToolTip": "Poke.Application\\DTOs\\BattleDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T20:47:08.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BattlePokemonEntity.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\Entities\\BattlePokemonEntity.cs",
+              "RelativeDocumentMoniker": "Poke.Infrastructure\\Persistence\\PostgreSQL\\Entities\\BattlePokemonEntity.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\Entities\\BattlePokemonEntity.cs",
+              "RelativeToolTip": "Poke.Infrastructure\\Persistence\\PostgreSQL\\Entities\\BattlePokemonEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T12:50:56.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Battle.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Domain\\Entities\\Battle.cs",
+              "RelativeDocumentMoniker": "Poke.Domain\\Entities\\Battle.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Domain\\Entities\\Battle.cs",
+              "RelativeToolTip": "Poke.Domain\\Entities\\Battle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T14:01:10.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "Poke.Infrastructure\\Persistence\\PostgreSQL\\Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "Poke.Infrastructure\\Persistence\\PostgreSQL\\Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:04:07.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "GetAllBattlesQuery.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\Battles\\Queries\\GetAllBattles\\GetAllBattlesQuery.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\Features\\Battles\\Queries\\GetAllBattles\\GetAllBattlesQuery.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\Battles\\Queries\\GetAllBattles\\GetAllBattlesQuery.cs",
+              "RelativeToolTip": "Poke.Application\\Features\\Battles\\Queries\\GetAllBattles\\GetAllBattlesQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T12:56:11.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CreateBattleCommand.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\Battles\\Command\\CreateBattle\\CreateBattleCommand.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\Features\\Battles\\Command\\CreateBattle\\CreateBattleCommand.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\Battles\\Command\\CreateBattle\\CreateBattleCommand.cs",
+              "RelativeToolTip": "Poke.Application\\Features\\Battles\\Command\\CreateBattle\\CreateBattleCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T13:38:47.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GetAllBattlesQueryHandler.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\Battles\\Queries\\GetAllBattles\\GetAllBattlesQueryHandler.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\Features\\Battles\\Queries\\GetAllBattles\\GetAllBattlesQueryHandler.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\Battles\\Queries\\GetAllBattles\\GetAllBattlesQueryHandler.cs",
+              "RelativeToolTip": "Poke.Application\\Features\\Battles\\Queries\\GetAllBattles\\GetAllBattlesQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T12:56:17.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "BattleRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\Repositories\\BattleRepository.cs",
+              "RelativeDocumentMoniker": "Poke.Infrastructure\\Persistence\\PostgreSQL\\Repositories\\BattleRepository.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\Repositories\\BattleRepository.cs",
+              "RelativeToolTip": "Poke.Infrastructure\\Persistence\\PostgreSQL\\Repositories\\BattleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:13:20.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SetWinnerCommand.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\Battles\\Command\\SetWinner\\SetWinnerCommand.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\Features\\Battles\\Command\\SetWinner\\SetWinnerCommand.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\Battles\\Command\\SetWinner\\SetWinnerCommand.cs",
+              "RelativeToolTip": "Poke.Application\\Features\\Battles\\Command\\SetWinner\\SetWinnerCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T20:15:26.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MappingsProfile.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\Mappings\\MappingsProfile.cs",
+              "RelativeDocumentMoniker": "Poke.Infrastructure\\Persistence\\PostgreSQL\\Mappings\\MappingsProfile.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\Mappings\\MappingsProfile.cs",
+              "RelativeToolTip": "Poke.Infrastructure\\Persistence\\PostgreSQL\\Mappings\\MappingsProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T21:10:08.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SetWinnerCommandHandler.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\Battles\\Command\\SetWinner\\SetWinnerCommandHandler.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\Features\\Battles\\Command\\SetWinner\\SetWinnerCommandHandler.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Features\\Battles\\Command\\SetWinner\\SetWinnerCommandHandler.cs",
+              "RelativeToolTip": "Poke.Application\\Features\\Battles\\Command\\SetWinner\\SetWinnerCommandHandler.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwBkAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T20:15:34.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PersistenceServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\PersistenceServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Poke.Infrastructure\\Persistence\\PostgreSQL\\PersistenceServiceRegistration.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\PersistenceServiceRegistration.cs",
+              "RelativeToolTip": "Poke.Infrastructure\\Persistence\\PostgreSQL\\PersistenceServiceRegistration.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCkAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T21:11:57.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\poke-be\\Program.cs",
+              "RelativeDocumentMoniker": "poke-be\\Program.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\poke-be\\Program.cs",
+              "RelativeToolTip": "poke-be\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T20:44:10.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "BaseResponse.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Models\\BaseResponse.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\Models\\BaseResponse.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Models\\BaseResponse.cs",
+              "RelativeToolTip": "Poke.Application\\Models\\BaseResponse.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T13:42:25.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CreateCommandResponse.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Models\\CreateCommandResponse.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\Models\\CreateCommandResponse.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Models\\CreateCommandResponse.cs",
+              "RelativeToolTip": "Poke.Application\\Models\\CreateCommandResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T13:42:35.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Poke.Infrastructure",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Poke.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Poke.Infrastructure\\Poke.Infrastructure.csproj",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Poke.Infrastructure.csproj",
+              "RelativeToolTip": "Poke.Infrastructure\\Poke.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-25T19:15:35.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Poke.Application",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Poke.Application.csproj",
+              "RelativeDocumentMoniker": "Poke.Application\\Poke.Application.csproj",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\Poke.Application.csproj",
+              "RelativeToolTip": "Poke.Application\\Poke.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-25T19:15:17.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Poke.Infrastructure\\Persistence\\PostgreSQL\\AppDbContext.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Persistence\\PostgreSQL\\AppDbContext.cs",
+              "RelativeToolTip": "Poke.Infrastructure\\Persistence\\PostgreSQL\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T20:57:54.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Poke.Domain",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Domain\\Poke.Domain.csproj",
+              "RelativeDocumentMoniker": "Poke.Domain\\Poke.Domain.csproj",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Domain\\Poke.Domain.csproj",
+              "RelativeToolTip": "Poke.Domain\\Poke.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-25T20:06:40.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\poke-be\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "poke-be\\appsettings.Development.json",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\poke-be\\appsettings.Development.json",
+              "RelativeToolTip": "poke-be\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-26T12:39:20.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "poke-be",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\poke-be\\Poke.Api.csproj",
+              "RelativeDocumentMoniker": "poke-be\\Poke.Api.csproj",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\poke-be\\Poke.Api.csproj",
+              "RelativeToolTip": "poke-be\\Poke.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-25T19:00:29.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ApplicationServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\ApplicationServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Poke.Application\\ApplicationServiceRegistration.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Application\\ApplicationServiceRegistration.cs",
+              "RelativeToolTip": "Poke.Application\\ApplicationServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T21:13:55.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "poke-be.http",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\poke-be\\poke-be.http",
+              "RelativeDocumentMoniker": "poke-be\\poke-be.http",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\poke-be\\poke-be.http",
+              "RelativeToolTip": "poke-be\\poke-be.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-09-26T12:46:02.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Class1.cs",
+              "RelativeDocumentMoniker": "Poke.Infrastructure\\Class1.cs",
+              "ToolTip": "C:\\Projects\\Tests\\microfrontends\\poke-be\\Poke.Infrastructure\\Class1.cs",
+              "RelativeToolTip": "Poke.Infrastructure\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T19:03:23.061Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

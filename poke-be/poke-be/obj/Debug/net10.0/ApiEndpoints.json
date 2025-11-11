@@ -1,0 +1,123 @@
+[
+  {
+    "ContainingType": "poke_be.Controllers.BattleController",
+    "Method": "SetWinner",
+    "RelativePath": "api/v1/Battle",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "battle",
+        "Type": "Poke.Domain.Entities.Battle",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "poke_be.Controllers.BattleController",
+    "Method": "CreateBattle",
+    "RelativePath": "api/v1/Battle",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "battle",
+        "Type": "Poke.Domain.Entities.Battle",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "poke_be.Controllers.BattleController",
+    "Method": "GetAllBattles",
+    "RelativePath": "api/v1/Battle",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "poke_be.Controllers.BattlePokemonsController",
+    "Method": "CreatePlayerPokemon",
+    "RelativePath": "api/v1/BattlePokemons",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "battlePokemons",
+        "Type": "Poke.Domain.Entities.BattlePokemons",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "poke_be.Controllers.BattlePokemonsController",
+    "Method": "AttackPokemon",
+    "RelativePath": "api/v1/BattlePokemons/AttackPokemon",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TargetPokemon",
+        "Type": "Poke.Domain.Entities.BattlePokemons",
+        "IsRequired": true
+      },
+      {
+        "Name": "Attack",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "poke_be.Controllers.BattlePokemonsController",
+    "Method": "GetBattlePlayerPokemons",
+    "RelativePath": "api/v1/BattlePokemons/GetBattlePlayerPokemons",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "battleId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "player",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "poke_be.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[poke_be.WeatherForecast, Poke.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

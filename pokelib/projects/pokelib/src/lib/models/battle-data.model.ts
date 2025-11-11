@@ -1,6 +1,6 @@
 export interface BattleData {
+  id: number;
   player1Name: string;
-  player1PokemonIDs: number[];
   player2Name: string;
-  player2PokemonIDs: number[];
+  winner: string;
 }

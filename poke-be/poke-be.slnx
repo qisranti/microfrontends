@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/API/">
+    <Project Path="poke-be/Poke.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/Core/">
+    <Project Path="Poke.Application/Poke.Application.csproj" />
+    <Project Path="Poke.Domain/Poke.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Infrastructure/">
+    <Project Path="Poke.Infrastructure/Poke.Infrastructure.csproj" />
+  </Folder>
+</Solution>

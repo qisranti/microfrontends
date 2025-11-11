@@ -1,0 +1,6 @@
+@poke_be_HostAddress = http://localhost:5077
+
+GET {{poke_be_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

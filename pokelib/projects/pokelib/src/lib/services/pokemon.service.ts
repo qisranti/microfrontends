@@ -25,11 +25,11 @@ export class PokemonService {
     return this.#http.get<PokemonList>(`${this.#baseUrl}/pokemon`, { params });
   }
 
-  getPokemonImage(pokemonId: number) : string {
+  getPokemonImage(pokemonId: number): string {
     return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png`;
   }
 
-  getPokemonDetails(pokemonId: number) : Observable<PokemonDetails> {
+  getPokemonDetails(pokemonId: number): Observable<PokemonDetails> {
     return this.#http.get<PokemonDetails>(`${this.#baseUrl}/pokemon/${pokemonId}`);
   }
 
@@ -45,24 +45,24 @@ export class PokemonService {
   }
 
   getPokemonMoves(pokemonId: number): Observable<PokemonMove[]> {
-  return this.#http.get<PokemonDetails>(`${this.#baseUrl}/pokemon/${pokemonId}`).pipe(
-    switchMap((details) => {
-      const moveRequests = details.moves.map((m) =>
-        this.#http.get<PokemonMoveApi>(m.move.url).pipe(
-          map(
-            (move): PokemonMove => ({
-              name: move.name,
-              power: move.power,
-              accuracy: move.accuracy,
-              pp: move.pp,
-              type: move.type.name,
-              damageClass: move.damage_class.name,
-            })
+    return this.#http.get<PokemonDetails>(`${this.#baseUrl}/pokemon/${pokemonId}`).pipe(
+      switchMap((details) => {
+        const moveRequests = details.moves.map((m) =>
+          this.#http.get<PokemonMoveApi>(m.move.url).pipe(
+            map(
+              (move): PokemonMove => ({
+                name: move.name,
+                power: move.power,
+                accuracy: move.accuracy,
+                pp: move.pp,
+                type: move.type.name,
+                damageClass: move.damage_class.name,
+              })
+            )
           )
-        )
-      );
-      return forkJoin(moveRequests);
-    })
-  );
-}
+        );
+        return forkJoin(moveRequests);
+      })
+    );
+  }
 }

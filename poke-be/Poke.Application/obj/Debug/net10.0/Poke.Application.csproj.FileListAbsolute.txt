@@ -1,0 +1,16 @@
+C:\Projects\Tests\microfrontends\poke-be\Poke.Application\bin\Debug\net10.0\Poke.Application.deps.json
+C:\Projects\Tests\microfrontends\poke-be\Poke.Application\bin\Debug\net10.0\Poke.Application.dll
+C:\Projects\Tests\microfrontends\poke-be\Poke.Application\bin\Debug\net10.0\Poke.Application.pdb
+C:\Projects\Tests\microfrontends\poke-be\Poke.Application\bin\Debug\net10.0\Poke.Domain.dll
+C:\Projects\Tests\microfrontends\poke-be\Poke.Application\bin\Debug\net10.0\Poke.Domain.pdb
+C:\Projects\Tests\microfrontends\poke-be\Poke.Application\obj\Debug\net10.0\Poke.Application.csproj.AssemblyReference.cache
+C:\Projects\Tests\microfrontends\poke-be\Poke.Application\obj\Debug\net10.0\Poke.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Tests\microfrontends\poke-be\Poke.Application\obj\Debug\net10.0\Poke.Application.AssemblyInfoInputs.cache
+C:\Projects\Tests\microfrontends\poke-be\Poke.Application\obj\Debug\net10.0\Poke.Application.AssemblyInfo.cs
+C:\Projects\Tests\microfrontends\poke-be\Poke.Application\obj\Debug\net10.0\Poke.Application.csproj.CoreCompileInputs.cache
+C:\Projects\Tests\microfrontends\poke-be\Poke.Application\obj\Debug\net10.0\Poke.Application.sourcelink.json
+C:\Projects\Tests\microfrontends\poke-be\Poke.Application\obj\Debug\net10.0\Poke.App.F94AC2F0.Up2Date
+C:\Projects\Tests\microfrontends\poke-be\Poke.Application\obj\Debug\net10.0\Poke.Application.dll
+C:\Projects\Tests\microfrontends\poke-be\Poke.Application\obj\Debug\net10.0\refint\Poke.Application.dll
+C:\Projects\Tests\microfrontends\poke-be\Poke.Application\obj\Debug\net10.0\Poke.Application.pdb
+C:\Projects\Tests\microfrontends\poke-be\Poke.Application\obj\Debug\net10.0\ref\Poke.Application.dll
